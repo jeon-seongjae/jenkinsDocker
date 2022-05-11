@@ -5,6 +5,7 @@ services:
   jenkins:
     image: jenkins/jenkins:lts
     container_name: jenkins_cicd
+    restart: always
     user: root
     privileged: true
     ports:
